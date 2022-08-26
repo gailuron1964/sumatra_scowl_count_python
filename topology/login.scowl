@@ -1,0 +1,7 @@
+event login
+
+user := $.user as string
+ip := $.ip as string
+count := Count()
+count_by_ip := Count(by ip)
+count_by_ip_user := Count(by ip, user)
